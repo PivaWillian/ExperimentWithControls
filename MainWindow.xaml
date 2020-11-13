@@ -26,7 +26,7 @@
         <RadioButton Content="5" HorizontalAlignment="Left" Margin="250,69,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
         <RadioButton Content="6" HorizontalAlignment="Left" Margin="290,69,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
         <ListBox x:Name="myListBox" HorizontalAlignment="Center" Height="100" Margin="10" Grid.Row="1" VerticalAlignment="Center" Width="100" SelectionChanged="myListBox_SelectionChanged">
-            <ListBoxItem Content="1" Selected="ListBoxItem_Selected"/>
+            <ListBoxItem Content="1"/>
             <ListBoxItem Content="2"/>
             <ListBoxItem Content="3"/>
             <ListBoxItem Content="4"/>
@@ -47,6 +47,6 @@
             <ListBoxItem Content="5"/>
         </ComboBox>
         <Slider x:Name="bigSlider" VerticalAlignment="Center" Margin="10" Grid.Row="2" Grid.ColumnSpan="2" AutoToolTipPlacement="TopLeft" Minimum="1111111111" Maximum="9999999999" Value="7183876962" ValueChanged="bigSlider_ValueChanged"/>
-        <Slider x:Name="smallSlider" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Grid.Row="2" Maximum="5" AutoToolTipPlacement="TopLeft" Minimum="1" Width="100" Cursor="None" ValueChanged="smallSlider_ValueChanged"/>
+        <Slider x:Name="smallSlider" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Grid.Row="2" Maximum="5" Minimum="1" Width="100" ValueChanged="smallSlider_ValueChanged" AutoToolTipPlacement="TopLeft"/>
     </Grid>
 </Window>
